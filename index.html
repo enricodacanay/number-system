@@ -1,88 +1,196 @@
 <!DOCTYPE html>
+
 <html>
-	<head>
-		<title>Number Systems</title>
+<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css\jquery.mobile-1.4.3.min.css" />
 		<script src="js\jquery-1.11.1.min.js"></script>
 		<script src="js\jquery.mobile-1.4.3.min.js"></script>
-	</head>
-	<body>
-	
+
+
+</head>
+<body>
+
 <!-- HOME -->
-		<div id="home" data-role="page">
-			<div data-role="header">
-				<h1>Number Systems</h1>
-			</div>
-			<div data-role="content">
-				<ul data-role="listview" data-mini="true" data-filter="true">
-					<li><a href="#intro" data-transition="flip">Introduction</a></li>
-					<li><a href="#decimal" data-transition="flip">Decimal Number System</a></li>
-					<li><a href="#" data-transition="flip">Binary Number System</a></li>
-					<li><a href="#" data-transition="flip">Octal Number System</a></li>
-					<li><a href="#" data-transition="flip">Hexadecimal Number System</a></li>
-					<li><a href="#" data-transition="flip">Converting a number from another base to decimal base</a></li>
-					<li><a href="#" data-transition="flip">Converting a number from decimal base to another base</a></li>
-					<li><a href="#" data-transition="flip">Converting some base to another base</a></li>
-					<li><a href="#" data-transition="flip">Shortcut method of converting binary to octal</a></li>
-					<li><a href="#" data-transition="flip">Shortcut method of converting octal to binary</a></li>
-					<li><a href="#" data-transition="flip">Shortcut method of converting binary to hexadecimal</a></li>
-					<li><a href="#" data-transition="flip">Shortcut method of converting hexadecimal to binary</a></li>
-					<li><a href="#" data-transition="flip">Fractional numbers in binary number system</a></li>
-				</ul>
-			</div>
-			<div data-role="footer" data-position="fixed" data-theme="b">
-				<div data-role="navbar" >
-					<ul>
-						<li><a href="#" data-icon="info" data-iconpos="right">About the app</a></li>
-						<li><a href="#" data-icon="user">About the developer</a></li>
-					</ul>
-				</div>
-			</div>
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>Number Systems</h1>
 		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-mini="true" data-filter="true">
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#decimal">Decimal Number System</a></li>
+					<li><a href="#binary">Binary Number System</a></li>
+					<li><a href="#octal">Octal Number System</a></li>
+					<li><a href="#">Hexadecimal Number System</a></li>
+					<li><a href="#">Converting a number from another base to decimal base</a></li>
+					<li><a href="#">Converting a number from decimal base to another base</a></li>
+					<li><a href="#">Converting some base to another base</a></li>
+					<li><a href="#">Shortcut method of converting binary to octal</a></li>
+					<li><a href="#">Shortcut method of converting octal to binary</a></li>
+					<li><a href="#">Shortcut method of converting binary to hexadecimal</a></li>
+					<li><a href="#">Shortcut method of converting hexadecimal to binary</a></li>
+					<li><a href="#">Fractional numbers in binary number system</a></li>
+				</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>developed by egdacanay</h1>
+		</div>
+	</div>
 
 <!-- INTRODUCTION -->
-		<div id="intro" data-role="page">
-			<div data-role="header">
-				<h1>Introduction</h1>
-			</div>
-			<div data-role="content">
-
-			</div>
-			
-			<div data-role="footer" data-position="fixed" data-theme="b">
-				<div data-role="navbar">
+	<div data-role="page" id="intro">
+		<div data-role="header" data-theme="b">
+			<h1>Introduction</h1>
+		</div>
+		<div data-role="content">
+			<p>The number system that we now use has provided mathematicians, engineers and scientists with great advantage over those of previous civilizations. We owe a lot to India for it was that country that gave us the ingenious method of expressing all numbers by means of ten symbols based on the number of fingers in our hands.</p>
+			<p>Number systems are classified into:</p>
+				<div data-role="collapsible-set" data-collapsed="true">
+					<div data-role="collapsible">
+						<h2>Non-positional Number System</h2>
+						<p>Use symbols such as I for 1, II for 2, III for 3, IIII for 4, IIIII for 5, etc.</p>
+						<p>Each symbol represents the same value regardless of its position in the number.</p>
+						<p>The symbols are simply added to find out the value of a particular number.</p>
+						<p>It is difficult to perform arithmetic operation with such a number system.</p>
+					</div>
+					<div data-role="collapsible">
+						<h2>Positional Number System</h2>
+						<p>Use only a few symbols called digits.</p>
+						<p>These symbols represent different values depending on the position they occupy in the number.</p>
+						<p>The value of the digit is determined by:</p>
+						<ol>
+							<li>The digit itself.</li>
+							<li>The position of the digit number.</li>
+							<li>The base of the number system(base = total number of digits in the number system).</li>
+							<li>The maximum value of a single digit is always equal to one less than the value of the base.</li>
+						</ol>
+					</div>
+				</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#decimal" data-icon="carat-r">Decimal Number System</a></li>
 					</ul>
 				</div>
-			
-			</div>
-
 		</div>
+	</div>
 
 <!-- DECIMAL NUMBER SYSTEM -->
-		<div id="decimal" data-role="page">
-			<div data-role="header">
-				<h1>Decimal Number System</h1>
-			</div>
-			<div data-role="content">
-			
-			
-			</div>
-			<div data-role="footer" data-position="fixed" data-theme="b">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#intro" data-icon="carat-l">Introduction</a></li>
-						<li><a href="#" data-icon="carat-r">Binary Number System</a></li>
-					</ul>
-				</div>
-			
-			</div>
-
+	<div data-role="page" id="decimal">
+		<div data-role="header" data-theme="b">
+			<h1>Decimal Number System</h1>
 		</div>
+		<div data-role="content">
+			<h2>Characteristics</h2>
+			<ul>
+				<li>A positional number system</li>
+				<li>Has 10 symbols or digits (0, 1, 2, 3, 4, 5, 6, 7, 8, 9). Hence, its base is 10.</li>
+				<li>The maximum value of a single digit is 9 (one less than the value of the base.</li>
+				<li>Each position represents a specific power of the base (10).</li>
+				<li>We use this number in our day-to-day life.</li>
+			</ul>
+			<div data-role="collapsible-set" data-collapsed="true">
+				<div data-role="collapsible">
+					<h2>Example</h2>
+					<p>2582<sub>10</sub> = (2 x 10<sup>3</sup>) + (5 x 10<sup>2</sup>) + (8 x 10<sup>1</sup> + (2 x 10<sup>0</sup>) =  2000 + 500 + 80 + 2</p>
+					<p>The first digit from the right has a base 10 raised to 0 (10<sup>0</sup>), the second digit is 10<sup>1</sup>, the third is 10<sup>2</sup> and so on.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#intro" data-icon="carat-l">Introduction</a></li>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#binary" data-icon="carat-r">Binary Number System</a></li>
+					</ul>
+			</div>
+		</div>
+	</div>
 
-	</body>
+<!-- BINARY NUMBER SYSTEM -->
+	<div data-role="page" id="binary">
+		<div data-role="header" data-theme="b">
+			<h1>Binary Number System</h1>
+		</div>
+		<div data-role="content">
+			<h2>Characteristics</h2>
+			<ul>
+				<li>A positional number system.</li>
+				<li>Has only 2 symbols or digits (0 and 1). Hence, its base is 2.</li>
+				<li>The maximum value of a single digit is 1 (one less than the value of the base).</li>
+				<li>Each position of a digit represents a specific power of the base (2).</li>
+				<li>This number system is used in computers.</li>
+			</ul>
+			<div data-role="collapsible-set" data-collapsed="true">
+				<div data-role="collapsible">
+					<h2>Example</h2>
+					<p>10101<sub>2</sub> = (1 x 2<sup>4</sup>) + (0 x 2<sup>3</sup>) + (1 x 2<sup>2</sup> + (0 x 2<sup>1</sup>) + (1 x 2<sup>0</sup>) =  16 + 0 + 4 + 0 + 1 = 21<sub>10</sub></p>
+					<p>The first digit from the right has a base 2 raised to 0 (2<sup>0</sup>), the second digit is 2<sup>1</sup>, the third is 2<sup>2</sup> and so on.</p>
+				</div>
+			</div>
+			<h2>Representing Numbers in Different Number Systems</h2>
+			<p>In order to be specific about which number system we are referring to, it is common practice to indicate the base as a subscript. Thus, we write:</p>
+			<p align="center">10101<sub>2</sub> = 21<sub>10</sub></p>
+			<h2>Bit</h2>
+			<ul>
+				<li>Bit stands for <b>Bi</b>nary digi<b>t</b>.</li>
+				<li>A bit in computer technology means either a 0 or 1.</li>
+				<li>Bit is also the basic unit of measurement of computer memory.</li>
+				<li>8 bits is equivalent to 1 byte.</li>
+				<li>1024 bytes is equal to 1 kilobyte (KB).</li>
+				<li>1024 KB is equal to 1 megabyte (MB).</li>
+				<li>1024 MB is equal to 1 gigabyte (GB).</li>
+				<li>1024 GB is equal to 1 terabyte (TB).</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#decimal" data-icon="carat-l">Decimal Number System</a></li>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#octal" data-icon="carat-r">Octal Number System</a></li>
+					</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- OCTAL NUMBER SYSTEM -->
+	<div data-role="page" id="octal">
+		<div data-role="header" data-theme="b">
+			<h1>Octal Number System</h1>
+		</div>
+		<div data-role="content">
+			<h2>Characteristics</h2>
+			<ul>
+				<li>A positional number system.</li>
+				<li>Has only 8 symbols or digits (0, 1, 2, 3, 4, 5, 6, 7). Hence, its base is 8.</li>
+				<li>The maximum value of a single digit is 7 (one less than the value of the base).</li>
+				<li>Each position of a digit represents a specific power of the base (8).</li>
+				<li>Since there are only 8 digits, 3 bits (2<sup>3</sup>) are sufficient to represent any octal number in binary.</li>
+			</ul>
+			<div data-role="collapsible-set" data-collapsed="true">
+				<div data-role="collapsible">
+					<h2>Example</h2>
+					<p>2057<sub>2</sub> = (2 x 8<sup>3</sup>) + (0 x 8<sup>2</sup> + (5 x 8<sup>1</sup>) + (7 x 8<sup>0</sup>) =  1024 + 0 + 40 + 7 = 1071<sub>10</sub></p>
+					<p>The first digit from the right has a base 8 raised to 0 (8<sup>0</sup>), the second digit is 8<sup>1</sup>, the third is 8<sup>2</sup> and so on.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#binary" data-icon="carat-l">Binary Number System</a></li>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#" data-icon="carat-r">Hexadecimal Number System</a></li>
+					</ul>
+			</div>
+		</div>
+	</div>	
+	
+	
+</body>
 </html>
