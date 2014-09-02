@@ -1,0 +1,17 @@
+    <widget id="com.example.numbersystem" version="0.0.1">
+        <name>NumberSystem</name>
+        <description>
+            A simple application for Number System lesson.
+        </description>
+        <author email="enricodacanay@yahoo.com" href="http://dmmmsu-sluc.com">
+            Enrico Dacanay
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+        <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
+        <icon src="icon.png" gap:platform="android" gap:qualifier="mdpi" />
+        <icon src="icon.png" gap:platform="android" gap:qualifier="hdpi" />
+        <icon src="icon.png" gap:platform="android" gap:qualifier="xhdpi" />
+        <icon src="icon.png" gap:platform="android" gap:qualifier="xxhdpi" />
+        <icon src="icon.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+    </widget>
